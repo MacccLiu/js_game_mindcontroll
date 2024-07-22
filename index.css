@@ -1,0 +1,50 @@
+.container{
+    width: 1000px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.container .board{
+    width: 350px;
+    height: 100%;
+
+}
+.board .panel{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background: url("./images/bg.gif") no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.board .panel .result{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.board .tip p{
+    font-weight: 100;
+    text-align: center;
+    color: navy;
+    font-size: 20px;
+}
+
+.dictionary {
+    width: 650px;
+    display: grid;
+    grid-template: repeat(20, 35px)/repeat(5, 130px);
+    grid-auto-flow: column;
+    font-weight: 100;
+}
+.dictionary .number{
+    display: inline-block;
+    width: 40px;
+    text-align: right;
+    margin-right: 10px;
+}
+.dictionary img{
+    height: 30px;
+    vertical-align: -5px;;
+}
